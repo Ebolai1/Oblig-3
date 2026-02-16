@@ -9,7 +9,7 @@ public class WrapLinesTextCommand extends WrapTextCommand {
 
     @Override
     public String execute(String text) {
-        Objects.requireNonNull(text,"Kan ikke være null");
+        Objects.requireNonNull(text,"Can't be null");
 
         String[] lines = text.split("\n", -1);
         StringBuilder sb = new StringBuilder();

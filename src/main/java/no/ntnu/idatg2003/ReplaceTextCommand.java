@@ -8,14 +8,14 @@ public class ReplaceTextCommand implements TextCommand {
 
     public ReplaceTextCommand(String target, String replacement) {
         if (target == null || target.isEmpty()) {
-            throw new IllegalArgumentException("Teksten kan ikke være null eller tomt";
+            throw new IllegalArgumentException("Text can't be null or empty");
         }
         this.target = target;
-        this.replacement = Objects.requireNonNull(replacement, "replacement kan ikke være null");
+        this.replacement = Objects.requireNonNull(replacement, "Replacement can't be null");
     }
 
      public String execute(String text) {
-        Objects.requireNonNull(text, "text kan ikke være null");
+        Objects.requireNonNull(text, "Text can't be null");
         return text.replace(target, replacement);
      }
 
