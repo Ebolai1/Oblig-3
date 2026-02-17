@@ -2,8 +2,22 @@ package no.ntnu.idatg2003;
 
 import java.util.Objects;
 
+
+/**
+ * A command that wraps all occurrences of a selected substring.
+ */
+
 public class WrapSelectionTextCommand extends WrapTextCommand {
     private final String selection;
+
+    /**
+     * Constructs a WrapSelectionTextCommand.
+     *
+     * @param opening the opening string
+     * @param end the closing string
+     * @param selection the text to wrap
+     * @throws IllegalArgumentException if selection is null or empty
+     */
 
     public WrapSelectionTextCommand(String opening, String end, String selection) {
         super(opening, end);

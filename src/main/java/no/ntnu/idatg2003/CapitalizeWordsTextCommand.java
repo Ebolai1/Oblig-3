@@ -2,6 +2,11 @@ package no.ntnu.idatg2003;
 
 import java.util.Objects;
 
+
+/**
+ * A command that capitalizes the first letter of each word.
+ */
+
 public class CapitalizeWordsTextCommand extends CapitalizeTextCommand{
 
     @Override

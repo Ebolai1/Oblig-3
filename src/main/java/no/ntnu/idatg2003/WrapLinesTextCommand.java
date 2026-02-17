@@ -2,10 +2,24 @@ package no.ntnu.idatg2003;
 
 import java.util.Objects;
 
+/**
+ * A command that wraps each line of the text separately.
+ */
+
 public class WrapLinesTextCommand extends WrapTextCommand {
+
+    /**
+     * Constructs a WrapLinesTextCommand.
+     *
+     * @param opening the opening string
+     * @param end the closing string
+     */
+
     public WrapLinesTextCommand(String opening, String end) {
         super(opening, end);
     }
+
+
 
     @Override
     public String execute(String text) {

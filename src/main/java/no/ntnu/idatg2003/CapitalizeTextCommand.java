@@ -3,6 +3,10 @@ package no.ntnu.idatg2003;
 import java.util.Objects;
 public class CapitalizeTextCommand implements TextCommand {
 
+    /**
+     * A command that capitalizes the first character of the text.
+     */
+
     @Override
     public String execute(String text) {
         Objects.requireNonNull(text,"Can't be null");

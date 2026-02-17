@@ -3,6 +3,13 @@ package no.ntnu.idatg2003;
 import java.util.List;
 import java.util.Objects;
 
+/**
+ * Represents a script consisting of multiple TextCommand objects.
+ *
+ * Commands are executed in sequence, where the output from one command
+ * becomes the input to the next command.
+ */
+
 public class Script {
     private final List<TextCommand> commands;
 

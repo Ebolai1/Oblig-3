@@ -2,9 +2,22 @@ package no.ntnu.idatg2003;
 
 import java.util.Objects;
 
+/**
+ * A command that replaces all occurrences of a target string with a replacement string.
+ */
+
 public class ReplaceTextCommand implements TextCommand {
     private final String target;
     private final String replacement;
+
+    /**
+     * Constructs a ReplaceTextCommand.
+     *
+     * @param target the text to replace (must not be null or empty)
+     * @param replacement the replacement text (must not be null)
+     * @throws IllegalArgumentException if target is null or empty
+     * @throws NullPointerException if replacement is null
+     */
 
     public ReplaceTextCommand(String target, String replacement) {
         if (target == null || target.isEmpty()) {

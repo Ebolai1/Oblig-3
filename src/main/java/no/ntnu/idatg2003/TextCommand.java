@@ -1,13 +1,19 @@
 package no.ntnu.idatg2003;
 
+
 /**
- * Felles grensesnitt for tekstkommandoer.
+ * Represents a command that transforms a text string.
+ *
+ * All text command classes must implement this interface and provide
+ * an implementation of the execute method.
  */
 public interface TextCommand {
     /**
-     * Utfører kommandoen på input-tekst og returnerer resultatet.
-     * @param text input-tekst
-     * @return transformert tekst
+     * Executes the command on the given input text.
+     *
+     * @param text the input text to transform (must not be null)
+     * @return the transformed text
+     * @throws NullPointerException if text is null
      */
     String execute(String text);
 }
